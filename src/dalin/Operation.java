@@ -42,8 +42,14 @@ public class Operation {
 		SetNum sn = new SetNum();
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		a = sn.setNumList();
-		System.out.print(a.get(0) + " 와 " + a.get(1) + "를 뺀 값은 ? > ");
-		System.out.println();
+		if (a.get(0) > a.get(1)) {
+			System.out.print(a.get(0) + " 와 " + a.get(1) + "를 뺀 값은 ? > ");
+			System.out.println();
+		}
+		else {
+			System.out.print(a.get(1) + " 와 " + a.get(0) + "를 뺀 값은 ? > ");
+			System.out.println();
+		}
 		return a.get(0) - a.get(1);
 	}
 }
