@@ -51,10 +51,10 @@ public class Try {
 			}
 		}
 		int hap = 0;
-		if (Snop != 0) {
-			for (int i = 0; i < listc.size(); i++) {
+			for (int i = 0; i < 10; i++) {
 				if (listc.get(i) == true) {
 					hap = hap + 1;
+					System.out.println(hap);
 				}
 			}
 			for (int i = 0; i < 3; i++) {
@@ -64,14 +64,11 @@ public class Try {
 					} else if (i == 1) {
 						b[i][j] = listb.get(j);
 					} else if (i == 2) {
-						b[i][j] = hap;
+						b[i][0] = hap;
+						b[i][1] = hap;
 					}
 				}
 			}
-		}
-		else {
-			b[2][1] = 0;
-		}
 		return b;
 	}
 }
