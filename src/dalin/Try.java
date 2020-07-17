@@ -11,36 +11,44 @@ public class Try {
 		int[][] b = new int[3][10];
 		Operation op = new Operation();
 		int Snop = op.opScan();
-		for (int i = 0; i < 10; i++) {
+		for (int i = 1; i <= 10; i++) {
 			if (Snop == 1) {
-				lista.add(op.getSum());
-				listb.add(op.intScan());
-				if (op.getSum() == op.intScan()) {
+				int ab = op.getSum(); 
+				int num = op.intScan();
+				lista.add(ab);
+				listb.add(num);
+				if (ab == num) {
 					listc.add(true);
 				} else {
 					listc.add(false);
 				}
 			} else if (Snop == 2) {
-				lista.add(op.getSub());
-				listb.add(op.intScan());
-				if (op.getSub() == op.intScan()) {
+				int ab = op.getSub(); 
+				int num = op.intScan();
+				lista.add(ab);
+				listb.add(num);
+				if (ab == num) {
 					listc.add(true);
 				} else {
 					listc.add(false);
 				}
 			} else if (Snop == 3) {
-				lista.add(op.getMul());
-				listb.add(op.intScan());
-				if (op.getMul() == op.intScan()) {
+				int ab = op.getMul(); 
+				int num = op.intScan();
+				lista.add(ab);
+				listb.add(num);
+				if (ab == num) {
 					listc.add(true);
 				} else {
 					listc.add(false);
 				}
 
 			} else if (Snop == 4) {
-				lista.add(op.getDiv());
-				listb.add(op.intScan());
-				if (op.getDiv() == op.intScan()) {
+				int ab = op.getDiv(); 
+				int num = op.intScan();
+				lista.add(ab);
+				listb.add(num);
+				if (ab == num) {
 					listc.add(true);
 				} else {
 					listc.add(false);
