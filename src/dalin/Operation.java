@@ -49,7 +49,7 @@ public class Operation {
 		ArrayList<Integer> a = new ArrayList<Integer>();
 		a = sn.setNumList();
 		if (a.get(0) > a.get(1)) {
-			int sum = a.get(0) + a.get(1);
+			int sum = a.get(0) - a.get(1);
 			System.out.print(a.get(0) + " 와 " + a.get(1) + "를 뺀 값은 ? > ");
 			return sum;
 		}
