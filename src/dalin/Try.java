@@ -47,7 +47,7 @@ public class Try {
 				}
 			} else {
 				System.out.println("게임을 종료합니다.");
-				break;
+				System.exit(0);
 			}
 		}
 		int hap = 0;
